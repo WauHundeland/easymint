@@ -44,3 +44,4 @@ next-env.d.ts
 .dev.vars*
 
 package-lock.json
+cloudflare-env.d.ts
