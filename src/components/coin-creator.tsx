@@ -1,0 +1,1 @@
+export { CoinCreator } from './coin-creator/index';

@@ -8,7 +8,7 @@
 	"main": ".open-next/worker.js",
 	"compatibility_date": "2025-03-01",
 	"compatibility_flags": [
-		"nodejs_compat",
+		"nodejs_compat_v2",
 		"global_fetch_strictly_public"
 	],
 	"assets": {
@@ -17,7 +17,18 @@
 	},
 	"observability": {
 		"enabled": true
-	}
+	},
+	"vars": {
+		"CLOUDFLARE_R2_PUBLIC_URL": "https://coincdn.l1337.net",
+		"NEXT_PUBLIC_HELIUS_API_KEY": "90e3a2a8-888a-4ed8-aa55-162709fdadc0"
+	},
+	"r2_buckets": [
+		{
+			"binding": "R2_BUCKET",
+			"bucket_name": "easymint",
+			"preview_bucket_name": "easymint"
+		}
+	]
 	/**
 	 * Smart Placement
 	 * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
